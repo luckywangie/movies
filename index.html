@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flatdango</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      /* Movie details layout */
+      #movie-details {
+        display: flex;
+        align-items: flex-start;
+        gap: 20px;
+      }
+
+      /* Poster image styling */
+      #poster {
+        max-width: 300px;
+        height: auto;
+        display: block;
+      }
+
+      /* Text content wrapper */
+      #movie-details div {
+        flex: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Welcome to Flatdango</h1>
+    </header>
+
+    <main>
+      <!-- Movie Details Section -->
+      <div id="movie-details">
+        <img
+          id="poster"
+          src="images/movie.jpg"
+          alt="Poster of the selected movie"
+        />
+        <div>
+          <h2 id="title">Movie Title</h2>
+          <p id="runtime">Runtime: 0 min</p>
+          <p id="showtime">Showtime: 00:00</p>
+          <p id="available-tickets">Available Tickets: 0</p>
+          <button id="buy-ticket">Buy Ticket</button>
+        </div>
+      </div>
+
+      <!-- List of Films -->
+      <ul id="films" aria-label="List of movies"></ul>
+    </main>
+
+    <footer>
+      <p>&copy; <span id="year"></span> Flatdango. All rights reserved.</p>
+    </footer>
+
+    <script>
+      // Set the current year dynamically in the footer
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+    <script src="script.js"></script>
+  </body>
+</html>

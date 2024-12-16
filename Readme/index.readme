@@ -1,0 +1,28 @@
+
+# Flatdango
+
+## Overview
+Flatdango is a web application for purchasing movie tickets from the Flatiron Movie Theater. Users can view movie details, see a list of available movies, and buy tickets. This project demonstrates the use of JavaScript for fetching data, DOM manipulation, and event handling.
+
+## Features
+- Display details of the first movie on page load, including its poster, title, runtime, showtime, and available tickets.
+- Show a menu of all available movies.
+- Allow users to buy tickets and update the number of available tickets.
+- Indicate when a movie is sold out.
+
+## Core Technologies
+- **HTML**: For structuring the web application.
+- **CSS**: For styling the application.
+- **JavaScript**: For dynamic content and interactivity.
+- **JSON Server**: For simulating a backend server with local data.
+
+## Getting Started
+
+### Prerequisites
+- Ensure you have [Node.js](https://nodejs.org/) installed on your machine.
+
+### Setup
+1. **Clone the repository:**
+   ```sh
+   git clone https://github.com/YOUR_USERNAME/flatdango.git
+   cd flatdango
